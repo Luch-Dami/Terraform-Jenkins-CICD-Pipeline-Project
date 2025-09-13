@@ -46,7 +46,7 @@ pipeline {
         // Deploy Terraform Infrastructure
         stage('Deploy Infrastructure') {
             steps {
-                sh 'terraform destroy --auto-approve'
+                sh 'terraform apply --auto-approve'
             }
         }
     }
